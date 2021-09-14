@@ -18,8 +18,7 @@ jobs:
       - checkout
       - run:
         name: "echo an env var"
-        command: |
-          echo $PROJECT_OWNER
+        command: echo $PROJECT_OWNER
 workflows:
   # Name the workflow "welcome"
   welcome:
