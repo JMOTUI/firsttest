@@ -16,9 +16,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run:
-        name: "echo an env var"
-        command: echo $PROJECT_OWNER
+      - run: echo $PROJECT_OWNER
 workflows:
   # Name the workflow "welcome"
   welcome:
